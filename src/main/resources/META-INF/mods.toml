@@ -1,0 +1,35 @@
+modLoader="javafml" #mandatory
+loaderVersion="[43,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="GNU LGPL 3.0"
+[[mods]] #mandatory
+modId="enhancedblockentities" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="EnhancedBlockEntities" #mandatory
+authors="CCr4ft3r (this port), Foundationgames (original fabric version)" #optional
+description='''
+Optimize block entity rendering with a more modern approach.
+'''
+[[dependencies.enhancedblockentities]] #optional
+modId="forge" #mandatory
+mandatory=true #mandatory
+versionRange="[43,)" #mandatory
+ordering="NONE"
+side="CLIENT"
+[[dependencies.enhancedblockentities]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.enhancedblockentities]]
+modId="reforgium"
+mandatory=true
+versionRange="[1.0.12,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.enhancedblockentities]]
+modId="better_runtime_resource_pack"
+mandatory=true
+versionRange="(,0.9.0]"
+ordering="NONE"
+side="CLIENT"
