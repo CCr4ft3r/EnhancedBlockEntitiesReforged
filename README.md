@@ -3,9 +3,12 @@ EBE Reforged is an unofficial Forge port of [Enhanced Block Entities](https://le
 This mod gives you a huge fps improvement for rendering block entities like chests: Approx. 3 times more fps with shaders and about 8 times without it.  
 This mod requires [Reforgium](https://modrinth.com/mod/reforgium) and [BRRP <= 0.9.0](https://www.curseforge.com/minecraft/mc-mods/better-runtime-resource-pack/files)
 
-### Important Notes and Requests
-The original copyright owner is **FoundationGames** who created the Fabric version of this port.
+### License and copyright notice
+The original copyright owners are
+- **FoundationGames** who created the Fabric version of this port licensed under LGPL-3.0 license
+- **FabricMC and contributors** who provided functionality for custom model loading licensed under Apache License 2.0
 
+### Important Notes and Requests
 - Please do not report issues with this port to the original owner or to their GitHub repo. Please report it to [mine](https://github.com/CCr4ft3r/EnhancedBlockEntitiesReforged/issues).
 - Please do not join their discord or post a comment on their mod page in order to get support for my port.
 - Please post your questions here.

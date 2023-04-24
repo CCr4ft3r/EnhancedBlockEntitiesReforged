@@ -1,14 +1,15 @@
-This software includes third party open source software components:
-- Enhanced Block Entities: https://github.com/FoundationGames/EnhancedBlockEntities:
-Please see ThirdPartyNotices-EBE.txt
+NOTICES
 
-- Fabrics custom model loading: https://github.com/FabricMC/fabric/blob/1.19.4/fabric-models-v0/src/client/java/net/fabricmc/fabric/mixin/client/model/ModelLoaderMixin.java:
-Please see ThirdPartyNotices-FABRIC.txt
+This repository incorporates code as listed below or described in the code.
+---------------------------------------------------------
 
-This software only changed method references to match it with Forge SRG and removed config related stuff that were based on
+@FabricMC/EnhancedBlockEntities 1.19.2 - LGPL-3.0 license
+https://github.com/FoundationGames/EnhancedBlockEntities
+
+This software changed method references to match it with Forge SRG and removed config related stuff that were based on
 another Fabric mod.
 
-                  GNU LESSER GENERAL PUBLIC LICENSE
+                   GNU LESSER GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -173,3 +174,5 @@ whether future versions of the GNU Lesser General Public License shall
 apply, that proxy's public statement of acceptance of any version is
 permanent authorization for you to choose that version for the
 Library.
+
+Copyright 2021 FoundationGames, LGPLv3
