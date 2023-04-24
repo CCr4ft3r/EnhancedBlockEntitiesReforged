@@ -161,7 +161,7 @@ jar {
         include 'README.md'
         include 'LICENSE'
         include 'ThirdPartyNotices-FABRIC.txt'
-        include 'ThirdPartyNotices-EBE-License.txt'
+        include 'ThirdPartyNotices-EBE.txt'
     }
     manifest {
         attributes([
