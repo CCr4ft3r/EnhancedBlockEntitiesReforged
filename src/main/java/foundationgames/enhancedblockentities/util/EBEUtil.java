@@ -26,14 +26,14 @@ import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.core.Direction;
 import net.minecraft.server.packs.PackResources;
 import net.minecraft.server.packs.VanillaPackResources;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.state.BlockState;
 import java.util.Arrays;
+import java.util.Random;
 
 public enum EBEUtil {
     ;
-    private static final RandomSource dummy = RandomSource.create();
+    private static final Random dummy = new Random();
 
     private static final Direction[] ALL_FACES_AND_NULL = Arrays.copyOf(Direction.values(), Direction.values().length + 1);
 

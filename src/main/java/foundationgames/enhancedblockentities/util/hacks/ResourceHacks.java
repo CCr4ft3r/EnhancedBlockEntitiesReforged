@@ -29,7 +29,7 @@ public enum ResourceHacks {;
     private static void cropAndPutTexture(ResourceLocation source, ResourceLocation result, ResourceManager manager, ExperimentalResourcePack pack, float u0, float v0, float u1, float v1) throws IOException {
         InputStream image;
         try {
-            image = manager.getResource(source).orElseThrow().open();
+            image = manager.getResource(source).getInputStream();
         } catch (IOException | NoSuchElementException e) {
             return;
         }

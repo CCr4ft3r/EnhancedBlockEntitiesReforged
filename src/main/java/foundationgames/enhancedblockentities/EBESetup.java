@@ -340,12 +340,6 @@ public enum EBESetup {;
         EnhancedBlockEntityRegistry.register(Blocks.DARK_OAK_WALL_SIGN, BlockEntityType.SIGN, BlockEntityRenderCondition.SIGN,
             new SignBlockEntityRendererOverride()
         );
-        EnhancedBlockEntityRegistry.register(Blocks.MANGROVE_SIGN, BlockEntityType.SIGN, BlockEntityRenderCondition.SIGN,
-            new SignBlockEntityRendererOverride()
-        );
-        EnhancedBlockEntityRegistry.register(Blocks.MANGROVE_WALL_SIGN, BlockEntityType.SIGN, BlockEntityRenderCondition.SIGN,
-            new SignBlockEntityRendererOverride()
-        );
         EnhancedBlockEntityRegistry.register(Blocks.CRIMSON_SIGN, BlockEntityType.SIGN, BlockEntityRenderCondition.SIGN,
             new SignBlockEntityRendererOverride()
         );

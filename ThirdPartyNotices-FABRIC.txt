@@ -2,8 +2,9 @@ NOTICES
 
 This repository incorporates code as listed below or described in the code.
 ---------------------------------------------------------
-@FabricMC/fabric 1.19.2 - Apache License 2.0
-https://github.com/FabricMC/fabric/blob/1.19.4/fabric-models-v0/src/client/java/net/fabricmc/fabric/mixin/client/model/ModelLoaderMixin.java
+@FabricMC/fabric 1.18.2 - Apache License 2.0
+https://github.com/FabricMC/fabric/blob/1.18.2/fabric-models-v0/src/main/java/net/fabricmc/fabric/mixin/client/model/MixinModelLoader.java
+https://github.com/FabricMC/fabric/blob/1.18.2/fabric-renderer-indigo/src/main/java/net/fabricmc/fabric/mixin/client/indigo/renderer/MixinBlockModelRenderer.java
 New source file name in this software: ModelBakeryMixin
 
 Copyright (c) 2016, 2017, 2018, 2019 FabricMC

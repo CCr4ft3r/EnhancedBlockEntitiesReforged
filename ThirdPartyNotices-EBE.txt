@@ -3,7 +3,7 @@ NOTICES
 This repository incorporates code as listed below or described in the code.
 ---------------------------------------------------------
 
-@FabricMC/EnhancedBlockEntities 1.19.2 - LGPL-3.0 license
+@FabricMC/EnhancedBlockEntities 1.18.2 - LGPL-3.0 license
 https://github.com/FoundationGames/EnhancedBlockEntities
 
 This software changed method references to match it with Forge SRG and removed config related stuff that were based on

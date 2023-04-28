@@ -54,7 +54,7 @@ public class ExperimentalResourcePack implements PackResources {
         if ("pack.mcmeta".equals(fileName)) {
             return IOUtils.toInputStream(PACK_META, Charsets.UTF_8);
         }
-        throw new FileNotFoundException("No such file '"+fileName+"' in EBE experimental resources");
+        throw new FileNotFoundException("No such file '" + fileName + "' in EBE experimental resources");
     }
 
     @Override
@@ -64,18 +64,19 @@ public class ExperimentalResourcePack implements PackResources {
                 return new ByteArrayInputStream(resources.get(id));
             }
         }
-        throw new FileNotFoundException("No such resource '"+id.toString()+"' of type '"+type.toString()+"' in EBE experimental resources");
+        throw new FileNotFoundException("No such resource '" + id.toString() + "' of type '" + type.toString() + "' in EBE experimental resources");
     }
 
     @Override
-    public Collection<ResourceLocation> getResources(PackType type, String namespace, String prefix, Predicate<ResourceLocation> pathFilter) {
+    public Collection<ResourceLocation> getResources(PackType type, String namespace, String prefix, int maxDepth, Predicate<String> pathFilter) {
         if (type == PackType.CLIENT_RESOURCES) {
             ImmutableList.Builder<ResourceLocation> r = ImmutableList.builder();
             resources.keySet().forEach(id -> {
                 if (
-                        id.getNamespace().equals(namespace) &&
+                    id.getNamespace().equals(namespace) &&
                         id.getPath().startsWith(prefix) &&
-                        pathFilter.test(ResourceLocation.tryParse(id.getPath()))
+                        pathFilter.test(id.getPath()) &&
+                        (id.getPath().split("[/\\\\]").length <= maxDepth)
                 ) {
                     r.add(id);
                 }
