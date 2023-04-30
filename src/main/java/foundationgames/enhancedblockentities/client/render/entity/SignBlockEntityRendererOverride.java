@@ -40,7 +40,7 @@ public class SignBlockEntityRendererOverride extends BlockEntityRendererOverride
 
             float signAngle;
             matrices.translate(0.5D, 0.5D, 0.5D);
-            if (be.getBlockState().getBlock() instanceof SignBlock) {
+            if (be.getBlockState().getBlock() instanceof StandingSignBlock) {
                 signAngle = - ((float)(be.getBlockState().getValue(StandingSignBlock.ROTATION) * 360) / 16);
                 matrices.mulPose(Vector3f.YP.rotationDegrees(signAngle));
             } else {
