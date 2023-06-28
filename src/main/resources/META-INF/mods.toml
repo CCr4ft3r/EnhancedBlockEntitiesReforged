@@ -27,9 +27,3 @@ mandatory=true
 versionRange="[1.0.12,)"
 ordering="NONE"
 side="CLIENT"
-[[dependencies.enhancedblockentities]]
-modId="better_runtime_resource_pack"
-mandatory=true
-versionRange="(,0.9.0]"
-ordering="NONE"
-side="CLIENT"

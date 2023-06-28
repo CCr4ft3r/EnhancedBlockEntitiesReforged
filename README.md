@@ -1,10 +1,17 @@
 # Enhanced Block Entities Reforged (Unofficial)
 EBE Reforged is an unofficial Forge port of [Enhanced Block Entities](https://legacy.curseforge.com/minecraft/mc-mods/enhanced-block-entities).  
-This mod gives you a huge fps improvement for rendering block entities like chests: Approx. 3 times more fps with shaders and about 8 times without it.  
-This mod requires [Reforgium](https://modrinth.com/mod/reforgium) and [BRRP <= 0.9.0](https://www.curseforge.com/minecraft/mc-mods/better-runtime-resource-pack/files)
+This mod gives you a huge fps improvement for rendering block entities like chests: Approx. 3 times more fps with shaders and about 8 times without it.
+Including other block entities like ender chests, beds, shulker boxes, signs and bells.
+This mod requires [Reforgium](https://www.curseforge.com/minecraft/mc-mods/reforgium)
+
+[![](https://img.shields.io/discord/1087408974271357040?color=7289DA&label=Discord&logo=discord&logoColor=FFFFFF '')](https://discord.com/invite/TEub2vQfhF) Join my Discord for support, suggestions and discussion with others
 
 ### License and copyright notice
-The original copyright owners are
+This mod contains the Better Runtime Resource Pack mod licensed under Mozilla Public License 2.0. The original and copyright owner is [SolidBlock_](https://legacy.curseforge.com/members/SolidBlock_/projects)
+Project: [BRRP Mod page](https://www.curseforge.com/minecraft/mc-mods/better-runtime-resource-pack)
+Source code: [GitHub Repo](https://github.com/SolidBlock-cn/BRRP)
+
+The original copyright owner of this port are
 - **FoundationGames** who created the Fabric version of this port licensed under LGPL-3.0 license
 - **FabricMC and contributors** who provided functionality for custom model loading licensed under Apache License 2.0
 
