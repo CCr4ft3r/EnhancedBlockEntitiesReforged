@@ -45,7 +45,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.ChestType;
 
-public enum EBESetup {;
+public enum EBESetup {
+    ;
 
     public static void setupRRPChests() {
         RuntimeResourcePack p = ResourceUtil.getPack();

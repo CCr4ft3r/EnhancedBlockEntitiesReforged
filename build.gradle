@@ -148,7 +148,9 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:brrp-618156:${brrp_mod_file_id}")
+    implementation fg.deobf("curse.maven:brrp-618156:${brrp_mod_file_id}") {
+        jarJar.ranged(it, "[0.9.0,)")
+    }
     implementation fg.deobf("curse.maven:rubidium-574856:${rubidium_mod_file_id}")
     implementation fg.deobf("maven.modrinth:reforgium:${reforgium_mod_version}")
 
@@ -162,6 +164,7 @@ jar {
         include 'LICENSE'
         include 'ThirdPartyNotices-FABRIC.txt'
         include 'ThirdPartyNotices-EBE.txt'
+        include 'ThirdPartyNotices-BRRP.txt'
     }
     manifest {
         attributes([
@@ -173,6 +176,13 @@ jar {
                 //"Implementation-Vendor": "enhancedblockentities authors",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
+    }
+}
+
+jarJar {
+    fromRuntimeConfiguration()
+    dependencies {
+        include(dependency("curse.maven:brrp-618156"))
     }
 }
 

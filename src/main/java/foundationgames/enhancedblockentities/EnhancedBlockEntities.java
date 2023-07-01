@@ -39,7 +39,6 @@ public final class EnhancedBlockEntities {
         ModelIdentifiers.init();
         EBESetup.setupResourceProviders();
         ItemProperties.register(Items.CHEST, new ResourceLocation("is_christmas"), (stack, world, entity, seed) -> DateUtil.isChristmas() ? 1 : 0);
-
         load();
     }
 
